@@ -1,18 +1,18 @@
 #container{
     display:grid;
-    grid-template-rows:.3fr 1fr;
+    grid-template-rows:.3fr 2.8fr;
     grid-template-columns:minmax(300px, .2fr) 1fr;
 }
 
 #sidebar{
-    background-color: green;
+    border: 2px solid green;
     grid-row: 1/3;
 }
 
 #header{
-    background-color: yellow;
+    border: 2px solid red;
 }
 
 #content{
-    background-color: blue;
+    border: 2px solid blue;
 }
