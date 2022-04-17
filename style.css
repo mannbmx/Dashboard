@@ -15,7 +15,7 @@ body{
     grid-row: 1/3;
     display: grid;
     grid-template-rows: .1fr .4fr 1fr;
-    padding-left: 2em;
+    padding-left: 2rem;
 }
 
 .logo{
@@ -40,6 +40,7 @@ ul{
 .settingControls{
     display: grid;
     gap: 15px;
+    padding-top: 1.5em;
 }
 
 /* header */
@@ -56,6 +57,7 @@ ul{
     display: grid;
     grid-template-columns: auto 1fr;
     padding-left: 1em;
+    gap: 5px;
 }
 
 .searchBar{
@@ -65,29 +67,81 @@ ul{
 }
 
 #notification{
+    justify-self: end;
+    padding-right: 2rem;
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: top;
+    grid-template-columns: 2em 3em 8.8em;
+    gap: 1rem;
 }
 
 .accountName{
+    justify-self: start;
     margin:0;
     font-size: 1.5em;
+    padding-top: .5em;
 }
 
 .accountPic{
     width: 3em;
     height: 3em;
+    justify-self: end;
 }
 
 .notiAlert{
     width: 2em;
     height: 2em;
+    padding-top: .8em;
 }
-
 .headerBtns{
     grid-column:3/4;
+    justify-self: space-between;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-right: 2rem;
 }
+
+button{
+    height: 30px;
+    border-radius: 18px;
+}
+
+.welcome{
+    display: grid;
+    grid-template-columns: 4em 1fr;
+    align-items: end;
+    padding-left: 1em;
+}
+
+.helloPic{
+    height: 4em;
+    width: 4em;
+}
+
+.helloMessage{
+    align-self: center;
+}
+
+.hiThere,
+.name {
+    margin: 0;
+}
+
+
+/* content */
 
 #content{
     border: 2px solid blue;
+    display: grid;
+    grid-template-columns: 1fr .3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects{
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
